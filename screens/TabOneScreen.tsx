@@ -18,7 +18,7 @@ export default function TabOneScreen() {
 
     let pickerResult : ImagePicker.ImagePickerResult
     pickerResult = await ImagePicker.launchImageLibraryAsync();
-
+    console.log('pickerResult', pickerResult);
     if (pickerResult.cancelled === true) {
       return;
     }
